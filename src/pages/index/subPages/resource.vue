@@ -9,7 +9,7 @@
         <view class="container">
           <view>
             <view class="card">
-              <image src="../uview/docs/b4b910e7f5919defa0b936c4fe03f4d.png" alt="" />
+              <!-- <image src="../uview/docs/b4b910e7f5919defa0b936c4fe03f4d.png" alt="" /> -->
               <text>Sketch Template</text>
               <text>通过在Sketch中导入uview-plus组件库，可以在交互设计阶段方便地调用常用的组件(Sketch版本：78)</text>
               <text href="https://uview-plus.jiangruyi.com/resources/uview-plus.sketch" download="">下载</text>
@@ -17,7 +17,7 @@
           </view>
           <view>
             <view class="card">
-              <image src="../uview/docs/9d24f116e345f13d2fc46734fbcd7a9.png" alt="" />
+              <!-- <image src="../uview/docs/9d24f116e345f13d2fc46734fbcd7a9.png" alt="" /> -->
               <text>Axure Template</text>
               <text>通过在Axure中导入uview-plus组件库，可以在交互设计阶段方便地调用常用的组件(Axure版本：9.0)</text>
               <text href="https://uview-plus.jiangruyi.com/resources/uview-plus.rp" download="">下载</text>
@@ -31,7 +31,7 @@
         <view class="container">
           <view>
             <view class="card">
-              <image src="../uview/docs/425b2a05e181894a8e3f09f4d95af4e.png" alt="" />
+              <!-- <image src="../uview/docs/425b2a05e181894a8e3f09f4d95af4e.png" alt="" /> -->
               <text>Empty组件配套占位图</text>
               <text>我们的专业设计师精心为您做了一套精美的缺省图，涵盖各个场景，文件内含图片和Sketch源文件</text>
               <text href="https://uview-plus.jiangruyi.com/resources/Empty.zip">下载</text>
@@ -39,7 +39,7 @@
           </view>
           <view>
             <view class="card">
-              <image src="../uview/docs/icon.png" alt="" />
+              <!-- <image src="../uview/docs/icon.png" alt="" /> -->
               <text>uview-plus icon</text>
               <text>基于字体的图标集，包含了大多数常见场景的图标。</text>
               <text href="https://at.alicdn.com/t/font_2225171_8kdcwk4po24.ttf">下载</text>
