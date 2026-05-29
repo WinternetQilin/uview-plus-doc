@@ -32,3 +32,9 @@
 ## 📄 License
 
 [MIT](https://opensource.org/license/mit/)
+
+## 🧠 提示词
+
+修复页面：修复这个页面的bug，并且将展示的代码部分改为使用组件 CodeBlock.vue 进行展示.顺便把没用的样式也清除掉，使用frontend-design.skill优化一下这个界面的样式，优先用样式md中已有的定义，没有的按照相似进行设计并补充到样式md中
+
+补充参数列表：在最后更新api表单：<复制粘贴的api表单>
