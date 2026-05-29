@@ -23,7 +23,7 @@
         为<code>false</code>和<code>true</code>的表现：
       </text>
       <view>
-        <image src="../common/keyboard.png" alt="uview-plus" class="logo" />
+        <!-- <image src="../common/keyboard.png" alt="uview-plus" class="logo" /> -->
       </view>
     </view>
   </view>
