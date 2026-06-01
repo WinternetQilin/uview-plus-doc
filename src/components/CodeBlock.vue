@@ -4,8 +4,10 @@
       <text class="code-title-text">{{ title }}</text>
     </view>
     <view class="code-actions">
-      <up-button class="action-btn" :text="isCopying ? '复制成功' : '复制代码'" size="mini" @click="handleCopy" />
-      <up-button class="action-btn" :text="isExpanded ? '收起' : '展开'" size="mini" @click="handleToggle" />
+      <UIcon :name="isCopying ? 'checkmark-circle' : 'file-text'" :label="isCopying ? '复制成功' : '复制代码'" color="#ccc"
+        size="14" @click="handleCopy" />
+      <UIcon :name="isExpanded ? 'arrow-up' : 'arrow-down'" :label="isExpanded ? '收起' : '展开'" color="#ccc" size="14"
+        @click="handleToggle" />
     </view>
     <view class="code-body" :class="{ collapsed: !isExpanded }">
       <scroll-view class="code-scroll" scroll-x>
@@ -22,6 +24,7 @@ import 'prismjs/components/prism-markup'
 import 'prismjs/components/prism-javascript'
 import 'prismjs/components/prism-typescript'
 import 'prismjs/components/prism-scss'
+import UIcon from 'uview-plus/components/u-icon/u-icon.vue'
 import 'prismjs/components/prism-bash'
 import 'prismjs/themes/prism-tomorrow.css'
 
@@ -179,15 +182,8 @@ async function handleCopy() {
     right: 16rpx;
     z-index: 10;
     display: flex;
+    align-items: center;
     gap: 12rpx;
-
-    .action-btn {
-      padding: 8rpx 20rpx;
-      border-radius: 6rpx;
-      background-color: rgba(58, 58, 58, 0.9);
-      color: #ccc;
-      font-size: 22rpx;
-    }
   }
 
   .code-body {
