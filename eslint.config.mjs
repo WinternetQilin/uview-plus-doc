@@ -45,14 +45,12 @@ export default uniHelper({
   },
   formatters: {
     /**
-     * Format CSS, LESS, SCSS files, also the `<style>` blocks in Vue
-     * By default uses Prettier
+     * 样式格式化交给 Prettier 处理，避免与 ESLint 规则冲突
      */
-    css: true,
+    css: false,
     /**
-     * Format HTML files
-     * By default uses Prettier
+     * HTML 格式化交给 Prettier 处理
      */
-    html: true,
+    html: false,
   },
 })
