@@ -32,28 +32,32 @@ const sidebarGroups = computed<SidebarGroup[]>(() => {
     },
   ]
 
-  groups.push(...componentGroups.map(group => ({
-    title: group.title,
-    items: group.items.map(item => ({
-      ...item,
-      path: `/components/${item.name}`,
+  groups.push(
+    ...componentGroups.map(group => ({
+      title: group.title,
+      items: group.items.map(item => ({
+        ...item,
+        path: `/components/${item.name}`,
+      })),
     })),
-  })))
+  )
 
   return groups
 })
 
-const expandedGroups = ref<Set<string>>(new Set([
-  '起步',
-  '新增组件',
-  '基础组件',
-  '表单组件',
-  '数据组件',
-  '反馈组件',
-  '布局组件',
-  '导航组件',
-  '其他组件',
-]))
+const expandedGroups = ref<Set<string>>(
+  new Set([
+    '起步',
+    '新增组件',
+    '基础组件',
+    '表单组件',
+    '数据组件',
+    '反馈组件',
+    '布局组件',
+    '导航组件',
+    '其他组件',
+  ]),
+)
 
 function toggleGroup(title: string) {
   if (expandedGroups.value.has(title)) {
@@ -130,10 +134,7 @@ onLoad((options) => {
             >
               <text>{{ group.title }}</text>
             </view>
-            <view
-              v-show="expandedGroups.has(group.title)"
-              class="sidebar-group-items"
-            >
+            <view v-show="expandedGroups.has(group.title)" class="sidebar-group-items">
               <view
                 v-for="item in group.items"
                 :key="item.path"
@@ -221,7 +222,7 @@ onLoad((options) => {
   left: 0;
   bottom: 0;
   width: 260px;
-  background: #fff;
+  background: #f5f5f5;
   border-right: 1px solid #eaecef;
   z-index: 50;
 }
@@ -288,7 +289,7 @@ onLoad((options) => {
   left: 260px;
   right: 0;
   bottom: 0;
-  background: #fff;
+  background: #f5f5f5;
 }
 
 .page-scroll {
