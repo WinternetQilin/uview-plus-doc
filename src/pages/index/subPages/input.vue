@@ -8,7 +8,19 @@
         Input 输入框
       </view>
       <view class="page-desc">
-        去除<code>fixed</code>、<code>showWordLimit</code>、<code>showConfirmBar</code>、<code>disableDefaultPadding</code>、<code>autosize</code>字段。此组件为一个输入框，默认没有边框和样式，是专门为配合表单组件<code>up-form</code>而设计的。
+        去除
+        <code>fixed</code>
+        、
+        <code>showWordLimit</code>
+        、
+        <code>showConfirmBar</code>
+        、
+        <code>disableDefaultPadding</code>
+        、
+        <code>autosize</code>
+        字段。此组件为一个输入框，默认没有边框和样式，是专门为配合表单组件
+        <code>up-form</code>
+        而设计的。
       </view>
     </view>
 
@@ -18,7 +30,17 @@
       </view>
       <view class="notice-content">
         <text class="notice-title">注意</text>
-        <text>由于在<code>nvue</code>下，<code>u-input</code>名称被uni-app官方占用，在uview2中官方使用<code>u--input</code>的方式解决，uview-plus则统一将前缀改为形如<code>up-input</code>既兼容nvue也兼容vue。</text>
+        <text>
+          由于在
+          <code>nvue</code>
+          下，
+          <code>u-input</code>
+          名称被 uni-app 官方占用，在 uview2 中官方使用
+          <code>u--input</code>
+          的方式解决，uview-plus 则统一将前缀改为形如
+          <code>up-input</code>
+          既兼容 nvue 也兼容 vue。
+        </text>
       </view>
     </view>
 
@@ -69,17 +91,26 @@
         基本使用
       </view>
       <view class="section-desc">
-        通过<code>type</code>设置输入框的类型，默认text
+        通过
+        <code>type</code>
+        设置输入框的类型，默认 text
       </view>
       <view class="section-desc">
-        通过<code>placeholder</code>设置输入框为空时的占位符
+        通过
+        <code>placeholder</code>
+        设置输入框为空时的占位符
       </view>
       <view class="section-desc">
-        通过<code>border</code>配置是否显示输入框的边框
+        通过
+        <code>border</code>
+        配置是否显示输入框的边框
       </view>
       <view class="section-desc">
-        绑定<code>@change</code>事件
+        绑定
+        <code>@change</code>
+        事件
       </view>
+      <CodeBlock title="基本使用" language="html" :code="basicUsageCode" />
     </view>
 
     <view class="section">
@@ -87,15 +118,28 @@
         输入框的类型
       </view>
       <view class="section-desc">
-        综述：输入框的类型可通过配置<code>type</code>来设置：
+        综述：输入框的类型可通过配置
+        <code>type</code>
+        来设置：
       </view>
       <view class="list-items">
-        <view>text-文本输入键盘。</view>
-        <view>number-数字输入键盘，app-vue下可以输入浮点数，app-nvue和小程序平台下只能输入整数。</view>
-        <view>idcard-身份证输入键盘，微信、支付宝、百度、QQ小程序。</view>
-        <view>digit-带小数点的数字键盘，App的nvue页面、微信、支付宝、百度、头条、QQ小程序。</view>
-        <view>password-等同于设置<code>password</code>为<code>true</code>的效果</view>
+        <view>text - 文本输入键盘</view>
+        <view>
+          number - 数字输入键盘，app-vue 下可以输入浮点数，app-nvue 和小程序平台下只能输入整数
+        </view>
+        <view>idcard - 身份证输入键盘，微信、支付宝、百度、QQ 小程序</view>
+        <view>
+          digit - 带小数点的数字键盘，App 的 nvue 页面、微信、支付宝、百度、头条、QQ 小程序
+        </view>
+        <view>
+          password - 等同于设置
+          <code>password</code>
+          为
+          <code>true</code>
+          的效果
+        </view>
       </view>
+      <CodeBlock title="输入框的类型" language="html" :code="typeCode" />
     </view>
 
     <view class="section">
@@ -103,8 +147,13 @@
         可清空字符
       </view>
       <view class="section-desc">
-        将<code>clearable</code>设置为<code>true</code>，会在输入框后方增加一个清空按钮。
+        将
+        <code>clearable</code>
+        设置为
+        <code>true</code>
+        ，会在输入框后方增加一个清空按钮。
       </view>
+      <CodeBlock title="可清空字符" language="html" :code="clearableCode" />
     </view>
 
     <view class="section">
@@ -112,8 +161,13 @@
         下划线
       </view>
       <view class="section-desc">
-        通过设置属性<code>border</code>为<code>bottom</code>即可变成一个下划线
+        通过设置属性
+        <code>border</code>
+        为
+        <code>bottom</code>
+        即可变成一个下划线
       </view>
+      <CodeBlock title="下划线样式" language="html" :code="bottomBorderCode" />
     </view>
 
     <view class="section">
@@ -123,6 +177,7 @@
       <view class="section-desc">
         全后置图标可自由设置样式信息。
       </view>
+      <CodeBlock title="前后图标" language="html" :code="iconCode" />
     </view>
 
     <view class="section">
@@ -130,8 +185,15 @@
         前后插槽
       </view>
       <view class="section-desc">
-        通过设置<code>slot</code>为<code>prefix</code>或<code>suffix</code>来指定前后插槽
+        通过设置
+        <code>slot</code>
+        为
+        <code>prefix</code>
+        或
+        <code>suffix</code>
+        来指定前后插槽
       </view>
+      <CodeBlock title="前后插槽" language="html" :code="slotCode" />
     </view>
 
     <view class="section">
@@ -191,7 +253,7 @@
             </tr>
             <tr>
               <td>onlyClearableOnFocused</td>
-              <td>clearabled开启时是否仅聚焦时才显示清除控件</td>
+              <td>clearable 开启时是否仅聚焦时才显示清除控件</td>
               <td>Boolean</td>
               <td>true</td>
               <td>false</td>
@@ -219,14 +281,14 @@
             </tr>
             <tr>
               <td>placeholderClass</td>
-              <td>指定placeholder的样式类</td>
+              <td>指定 placeholder 的样式类</td>
               <td>String</td>
               <td>input-placeholder</td>
               <td>-</td>
             </tr>
             <tr>
               <td>placeholderStyle</td>
-              <td>指定placeholder的样式，字符串/对象形式</td>
+              <td>指定 placeholder 的样式，字符串/对象形式</td>
               <td>String | Object</td>
               <td>color: #c0c4cc</td>
               <td>-</td>
@@ -254,7 +316,7 @@
             </tr>
             <tr>
               <td>holdKeyboard</td>
-              <td>focus时，点击页面的时候不收起键盘</td>
+              <td>focus 时，点击页面的时候不收起键盘</td>
               <td>Boolean</td>
               <td>false</td>
               <td>true</td>
@@ -282,7 +344,7 @@
             </tr>
             <tr>
               <td>cursor</td>
-              <td>指定focus时光标的位置</td>
+              <td>指定 focus 时光标的位置</td>
               <td>String | Number</td>
               <td>-1</td>
               <td>-</td>
@@ -491,7 +553,7 @@
             </tr>
             <tr>
               <td>doBlur</td>
-              <td>手动Blur</td>
+              <td>手动 Blur</td>
             </tr>
           </tbody>
         </table>
@@ -525,6 +587,114 @@
 </template>
 
 <script setup lang="ts">
+import CodeBlock from '@/components/CodeBlock.vue'
+
+const basicUsageCode = `<template>
+    <up-input
+        v-model="value"
+        placeholder="请输入内容"
+        @change="change"
+    ></up-input>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const value = ref('');
+
+const change = (e) => {
+    console.log('change', e);
+}
+<\/script>`
+
+const typeCode = `<template>
+    <up-input
+        v-model="value1"
+        type="text"
+        placeholder="文本输入"
+    ></up-input>
+    <up-input
+        v-model="value2"
+        type="number"
+        placeholder="数字输入"
+    ></up-input>
+    <up-input
+        v-model="value3"
+        type="password"
+        placeholder="密码输入"
+    ></up-input>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const value1 = ref('');
+const value2 = ref('');
+const value3 = ref('');
+<\/script>`
+
+const clearableCode = `<template>
+    <up-input
+        v-model="value"
+        placeholder="请输入内容"
+        :clearable="true"
+    ></up-input>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const value = ref('');
+<\/script>`
+
+const bottomBorderCode = `<template>
+    <up-input
+        v-model="value"
+        placeholder="请输入内容"
+        border="bottom"
+    ></up-input>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const value = ref('');
+<\/script>`
+
+const iconCode = `<template>
+    <up-input
+        v-model="value"
+        placeholder="请输入内容"
+        prefix-icon="search"
+        suffix-icon="camera"
+    ></up-input>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const value = ref('');
+<\/script>`
+
+const slotCode = `<template>
+    <up-input
+        v-model="value"
+        placeholder="请输入内容"
+    >
+        <template #prefix>
+            <view class="prefix-slot">前缀</view>
+        </template>
+        <template #suffix>
+            <view class="suffix-slot">后缀</view>
+        </template>
+    </up-input>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const value = ref('');
+<\/script>`
 </script>
 
 <style lang="scss" scoped>
@@ -565,7 +735,7 @@
 }
 
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .section-title {
